@@ -4,3 +4,9 @@ Icon?
 .Spotlight-V100
 .Trashes
 ._*
+
+# Jekyll Files and Folders
+_site/
+
+# SASS
+.sass-cache/

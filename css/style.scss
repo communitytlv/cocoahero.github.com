@@ -1,0 +1,155 @@
+$color-seed: #336699;
+
+@mixin border-radius($radius: 15px) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin linear-background-gradient($start, $stop) {
+	background: $start;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from($start), to($stop)); 
+	background: -moz-linear-gradient(top, $start, $stop); 
+}
+
+@mixin raised-embossed($color: #000) {
+	text-shadow: 1px 1px $color;
+}
+
+@mixin inset-text($color: #000) {
+	text-shadow: 0px 1px $color;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Cantarell&v2);
+
+* {margin:0; padding:0;box-sizing:border-box;-moz-box-sizing:border-box;}
+
+html, body {height: 100%;}
+
+body {
+	font: normal 100% "Cantarell", sans-serif;
+}
+
+div#wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -12.5em;
+}
+
+header#site-header {
+	margin: 0 auto;
+	padding: 15px;
+	max-width: 62.5em;
+}
+
+h1#site-title {
+	font-size: 2.5em;
+	color: $color-seed;
+	@include inset-text(#333);
+	
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+nav#main-nav {	
+	@include linear-background-gradient($color-seed, darken($color-seed, 10%));
+}
+
+ul#main-nav-links {
+	font-size: 1.5em;
+	margin: 0 auto;
+	padding: 15px;
+	max-width: 41.666666667em;
+	@include raised-embossed;
+	
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+	
+	li {
+		display: inline;
+		padding-right: 20px;
+		color: #FFF;
+	}
+}
+
+div#content {
+	margin: 0 auto;
+	max-width: 62.5em;
+	padding: 15px;
+}
+
+div#articles {
+	float:left;
+	width: 70%;
+}
+
+article {
+	padding-bottom: 15px;
+}
+
+h1.post-title {
+	a {
+		color: inherit;
+		text-decoration: none;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+div#sidebar {
+	float:right;
+	width: 30%;
+	padding: 15px;
+	padding-top: 0px;
+}
+
+p {
+	padding-bottom:0.25em;
+}
+
+ul, ol {
+	padding:0.5cm 1cm;
+}
+
+ul.vertical-link-list {
+	padding: 0px 0px 0px 10px;
+	list-style-type: none;
+}
+
+br.clear {
+	display: inline;
+	width: 0;
+	height: 0;
+	clear:both;
+}
+
+div.push, footer {
+	height: 12.5em;
+}
+
+footer {
+	@include linear-background-gradient($color-seed, darken($color-seed, 10%));
+	padding: 15px;
+}
+
+div#footer-widget-wrapper {
+	max-width: 62.5em;
+	margin: 0 auto;
+}
+
+div.footer-widget {
+	padding: 5px;
+	float:left;
+	color: #FFF;
+	@include raised-embossed;
+	a {color: inherit;}
+}
+
+div#about-footer-widget {width: 70%;}
+div#avatar-footer-widget {width: 30%;text-align:center;}
