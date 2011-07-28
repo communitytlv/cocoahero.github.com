@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Giving MainWindow.xib the Boot
+tags: cocoa, objective-c, ios-dev
 ---
 I will be quick and to the point. I dislike XIB's (Interface Builder documents). Generally, I dislike all WYSIWYG style replacements for raw code. Granted, XIB's are the best solution I've seen in a long time, but they are a pain to load for anything but a UIViewController subclass.
 

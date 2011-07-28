@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Giving NSObject's a Voice
+tags: cocoa, objective-c, ios-dev
 ---
 One of the most common things that I do when debugging code is place various NSLog statements to see where the code is going (or not going).  Very often the string I was printing had information about the current method call and or the object it was being called from.  So I decided to make my life a little easier with a small little extension on NSObject.
 

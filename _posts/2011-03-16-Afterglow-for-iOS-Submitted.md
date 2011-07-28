@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Afterglow for iOS Submitted to App Store
+categories: news
 ---
 In my spare time, I have a singing hobby known as "barbershop".  No, I do not mean I sing while cutting people's hair.  Barbershop is a genre of singing that is known for close four part harmony and men dressed in red striped suspenders.  It is a thriving community especially now that more and more youth (like me) are getting involved.
 

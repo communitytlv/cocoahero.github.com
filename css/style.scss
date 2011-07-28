@@ -83,7 +83,8 @@ div#content {
 }
 
 div#articles {
-	width: 100%;
+	width: 70%;
+	float:left;
 }
 
 article {
@@ -94,10 +95,6 @@ h1.post-title {
 	a {
 		color: inherit;
 		text-decoration: none;
-		
-		&:hover {
-			text-decoration: underline;
-		}
 	}
 }
 
@@ -117,6 +114,18 @@ ul, ol {
 ul.vertical-link-list {
 	padding: 0px 0px 0px 10px;
 	list-style-type: none;
+	
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+}
+
+div#sidebar {
+	width:30%;
+	float:right;
+	padding: 15px;
+	padding-top: 0px;
 }
 
 br.clear {

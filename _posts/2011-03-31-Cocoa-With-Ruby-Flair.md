@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Cocoa With Ruby Flair
+tags: cocoa, objective-c, ruby, ios-dev
 ---
 After working with the Ruby on Rails framework, there were a lot of things that I noticed about Ruby that I loved.  One of the biggest things was the tight integration of iterations and blocks.
 

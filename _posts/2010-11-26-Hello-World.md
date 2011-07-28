@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Hello World
+categories: news
 ---
 So I have been pondering and pondering the if's, when's, and how's of a development diary blog.  What do I mean by a "development diary blog"? I wish I knew myself, but it seems like a popular thing these days.
 
