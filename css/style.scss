@@ -83,8 +83,7 @@ div#content {
 }
 
 div#articles {
-	float:left;
-	width: 70%;
+	width: 100%;
 }
 
 article {
@@ -102,19 +101,17 @@ h1.post-title {
 	}
 }
 
-div#sidebar {
-	float:right;
-	width: 30%;
-	padding: 15px;
-	padding-top: 0px;
-}
-
 p {
 	padding-bottom:0.25em;
 }
 
 ul, ol {
 	padding:0.5cm 1cm;
+}
+
+.gist {
+	font-size: 0.8em;
+	padding: 5px 0px;
 }
 
 ul.vertical-link-list {
