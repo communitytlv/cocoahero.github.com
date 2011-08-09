@@ -3,8 +3,8 @@ layout: default
 ---
 <article>
 	<header>
+		<time pubdate="pubdate">{{ page.date | date: "%B %e, %Y" }}</time>
 		<h1 class="post-title"><a href="{{ post.url }}">{{ page.title }}</a></h1>
-		<time pubdate="pubdate">{{ page.date | date_to_string }}</time>
 	</header>
 	{{ content }}
 </article>

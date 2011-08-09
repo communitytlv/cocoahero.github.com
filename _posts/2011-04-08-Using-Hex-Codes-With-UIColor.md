@@ -2,6 +2,7 @@
 layout: post
 title: Using Hex Codes With UIColor
 tags: cocoa, objective-c, ios-dev
+summary: Being a transplant from web design and development, I have always struggled with converting from hexadecimal representations of colors to RGB.  Usually when I am designing an iOS application, I try to use colors that I have used in web designs.  The fact that I had to convert hex codes into RGB values annoyed me.
 ---
 Being a transplant from web design and development, I have always struggled with converting from hexadecimal representations of colors to RGB.  Usually when I am designing an iOS application, I try to use colors that I have used in web designs.  The fact that I had to convert hex codes into RGB values annoyed me.
 

@@ -83,12 +83,23 @@ div#content {
 }
 
 div#articles {
-	width: 70%;
+	width: 100%;
 	float:left;
 }
 
 article {
-	padding-bottom: 15px;
+	padding-bottom: 50px;
+	
+	header {
+		time {
+			color: #999;
+		}
+	}
+}
+
+a.read-more {
+	text-decoration: none;
+	color: $color-seed;
 }
 
 h1.post-title {
