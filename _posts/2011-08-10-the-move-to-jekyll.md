@@ -12,10 +12,6 @@ Around the same time as my Rails dilemma, I started using Github more and more. 
 
 Jekyll is a [open source project](https://github.com/mojombo/jekyll) designed and written by Github's own Tom Preston-Werner.  At first, it was a little hard to understand what was going on, but once I figured it out, it was amazing.  There are basically three components to a Jekyll website.
 
-1. Layouts / Templates
-2. Posts
-3. Static Pages
-
 ## Layouts / Templates
 Layouts in Jekyll go in a directory called **\_layouts/** (duh).  They are written in HTML and you can use certain predefined "liquid" tags for dynamic elements, such as page title, post date, and content. The best part about them is the ability to have inheritance.
 
