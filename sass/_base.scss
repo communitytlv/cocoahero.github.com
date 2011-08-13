@@ -1,0 +1,34 @@
+// Imports -------------------------------------------------------------------
+
+@import "compass/css3/box-sizing";
+@import "compass/css3/images";
+@import "compass/css3/text-shadow";
+@import "compass/typography/vertical_rhythm";
+
+// CSS Reset -----------------------------------------------------------------
+
+* {
+	margin: 0; 
+	padding: 0;
+	@include box-sizing(border-box);
+}
+
+// Vertical Rhythm -----------------------------------------------------------
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$relative-font-sizing: true;
+
+// Color Constants -----------------------------------------------------------
+
+$base-color-seed: #336699;
+
+// Global Styling ------------------------------------------------------------
+
+html {
+	@include establish-baseline;
+}
+
+br.clear {
+	clear: both;
+}

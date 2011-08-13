@@ -12,7 +12,7 @@ Around the same time as my Rails dilemma, I started using Github more and more. 
 
 Jekyll is a [open source project](https://github.com/mojombo/jekyll) designed and written by Github's own Tom Preston-Werner.  At first, it was a little hard to understand what was going on, but once I figured it out, it was amazing.  There are basically three components to a Jekyll website.
 
-## Layouts / Templates
+### Layouts / Templates
 Layouts in Jekyll go in a directory called **\_layouts/** (duh).  They are written in HTML and you can use certain predefined "liquid" tags for dynamic elements, such as page title, post date, and content. The best part about them is the ability to have inheritance.
 
 For example, I have a layout called **default** [(_layouts/default.html)](https://github.com/cocoahero/cocoahero.github.com/blob/master/_layouts/default.html).  In here, I put all the boilerplate HTML code for the outside structure of the web site; the stylesheet links, title element, etc.  The most important thing to put in this layout is the *\{\{ content \}\}* liquid tag.  If your familiar with Ruby on Rails, this tag acts like a yield, and is what allows inheritance to work.
@@ -21,18 +21,18 @@ Since layouts can have a parent layout, you can refactor "views" into separate l
 
 To summarize, you use *\{\{ content \}\}* to yield to a child layout (or static page), and object style accessors to get information about the page or post your rendering.
 
-## Posts
+### Posts
 Posts in Jekyll are considered a special type of file.  They exist in the **\_posts/** directory and have a specific naming convention: *YYYY-MM-DD-Hyphenated-Title.{html | markdown}*.  Jekyll parses the filename to get information such post date, and permalink identifier.  They can be written in either HTML or markdown, which will be converted at compile time.
 
 You can set the layout used, title, and *any custom properties* using the "YAML Front Matter" at the top of each file.
 
-## Static Pages
+### Static Pages
 The beauty of Jekyll is in the end, your site is *static*.  That means, any folder structure or static HTML page you create will exist in the final product.  So if you create a folder called **/projects/** with a set of HTML files, you will be able to get to them at *http://yoursite.com/projects/*.  It's that easy.  What could get better? You can use layouts on these too to DRY up your site's code!
 
-## The End Result
+### The End Result
 As I said before, your final product will be a completely static website.  Jekyll takes all your layouts, posts, and static pages and compiles them together into a special directory called **\_site/**. (It's a good idea to not check this folder into your source code repository unless you plan on deploying that way.)  Depending on your permalink configuration, Jekyll will create folder structures for your posts so you end up with pretty URLs such as http://example.com/2011/01/30/My-Post.html.  And like I said before with static pages, your custom folder structures are preserved and copied into this **\_site/** directory.
 
-## Jekyll and Github pages
+### Jekyll and Github pages
 Now that I've explained the basics of Jekyll, now for the fun part of hosting on Github!  Simply create a repository called *username.github.com* (obviously substituting your Github username) and push your Jekyll working directory to the master branch.  Github will automatically run Jekyll on your repo and host the resulting site at http://username.github.com.  
 
 For more information about Github pages and Jekyll, please see [here](http://pages.github.com).
