@@ -34,7 +34,7 @@ div#sidebar-header {
 	border-bottom: 1px solid #FFF;
 }
 
-span#nickname {
+span#site-title {
 	display:block;
 	@include adjust-font-size-to(32px);
 	color: #FFF;
@@ -123,15 +123,6 @@ div#post-meta {
 }
 
 // Copy Styling
-
-h2 {
-	@include adjust-font-size-to(24px);
-}
-
-h3 {
-	@include adjust-font-size-to(22px);
-}
-
 
 p {
 	padding-bottom: 1em;
