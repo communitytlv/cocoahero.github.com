@@ -7,35 +7,26 @@ body {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
-// Layout --------------------------------------------------------------------
-
-div#page {
-	height: 100%;
-	min-width: 60.00em;
-}
-
-div#sidebar {
-	min-height: 31.25em;
-	height: 100%;
-	width: 17.1875em;
-	float: left;
-	text-align: right;
-	padding-top: 6.25em;
-	padding-right: 2.5em;
-	background-color: #EEEEEE;
-	@include background-image(linear-gradient(left, $base-color-seed 90%, darken($base-color-seed, 5%) 100%));
-	position: fixed;
-}
-
 // Sidebar -------------------------------------------------------------------
 
-div#sidebar-header {
+section#sidebar {
+	width: 17.1875em;
+	height: 100%;
+	float: left;
+	text-align: right;
+	@include background-image(linear-gradient(left, $base-color-seed 90%, darken($base-color-seed, 5%) 100%));
+	position: fixed;
+	padding-top: 6.25em;
+	padding-right: 2.5em;
+}
+
+header#site-header {
 	padding-bottom: 0.9375em;
 	border-bottom: 1px solid #FFF;
 }
 
-span#site-title {
-	display:block;
+h1#site-title {
+	font-weight: normal;
 	@include adjust-font-size-to(32px);
 	color: #FFF;
 }
@@ -46,7 +37,6 @@ nav#site-navigation {
 	
 	a {
 		color: inherit;
-		text-transform: uppercase;
 		text-decoration: none;
 		
 		&:hover {
@@ -56,19 +46,19 @@ nav#site-navigation {
 	
 	ul {
 		list-style-type: none;
-	}
-	
-	ul li {
-		padding-bottom: 0.3125em;
+		
+		li {
+			padding-bottom: 0.3125em;
+		}
 	}
 }
 
-// Global Content ------------------------------------------------------------
+// Page Content --------------------------------------------------------------
 
-div#content {
+section#content {
+	max-width: 42.8125em;
 	height: 100%;
 	margin-left: 17.1875em;
-	max-width: 42.8125em;
 	float: left;
 	padding-left: 2.5em;
 	padding-top: 6.25em;
@@ -84,52 +74,67 @@ h1#content-title {
 	color: $base-color-seed;
 }
 
-// Post List -----------------------------------------------------------------
+// Blog Article --------------------------------------------------------------
 
-ul.post-list {
-	list-style-type: none;
+article {
+	padding-bottom: 2em;
 }
 
-span.post-title {
-	@include adjust-font-size-to(24px);
+header.article-header {	
+	margin-bottom: 0.46875em;
 	
-	a {
-		color: inherit;
-		text-decoration: none;
-		
-		&:hover {
-			text-decoration: underline;
+	h1.article-title {
+		@include adjust-font-size-to(32px);
+		font-weight: normal;
+		padding-bottom: 0.46875em;
+		border-bottom: 1px solid $base-color-seed;
+		margin-bottom: 0.46875em;
+		color: $base-color-seed;
+	}
+	
+	time {
+		color: #999;
+	}
+}
+
+div#blog-index {
+	padding-bottom: 1em;
+	
+	article {
+		header {
+			h2 {
+				font-weight: normal;
+				a {
+					text-decoration: none;
+				
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
 		}
 	}
 }
 
-span.post-date {
-	color: #AAA;
+// Generic Styling -----------------------------------------------------------
+
+h2 {
+	@include adjust-font-size-to(28px);
+	font-weight: normal;
 }
-
-a.read-more {
-	color: $base-color-seed;
-	text-decoration: none;
-	
-	&:hover {
-		text-decoration: underline;
-	}
-}
-
-// Single Post ---------------------------------------------------------------
-
-div#post-meta {
-	padding-bottom: 0.46875em;
-}
-
-// Copy Styling
 
 p {
+	@include adjust-font-size-to(16px);
 	padding-bottom: 1em;
-	
-	a {
-		color: $base-color-seed;
-	}
+}
+
+a {
+	color: $base-color-seed;
+}
+
+ul,ol {
+	margin-left: 1cm;
+	margin-bottom: 1em;
 }
 
 .gist {
