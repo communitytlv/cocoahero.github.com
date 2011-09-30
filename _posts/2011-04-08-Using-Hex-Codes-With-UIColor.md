@@ -10,9 +10,6 @@ So, with the help of [@iMacthere4iAm](http://twitter.com/iMacthere4iAm), we fixe
 
 In my common code library for iOS, I added an extension for the UIColor class.  In this extension, I created a new factory method that takes a hexadecimal (integer) and an alpha value and returns an autoreleased UIColor object.
 
-{% highlight objective-c linenos %}
-// Returns an autoreleased UIColor object
-UIColor * myColor = [UIColor colorWithHexCode:0x336699 alpha:1.0f];
-{% endhighlight %}
+<script src="https://gist.github.com/911015.js"> </script>
 
 Above is a code snippet demonstrating its use.
