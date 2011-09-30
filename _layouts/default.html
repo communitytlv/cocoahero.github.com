@@ -17,24 +17,22 @@
 		</script>
 	</head>
 	<body>
-		<div id="page">
-			<div id="sidebar">
-				<div id="sidebar-header">
-					<span id="site-title">Cocoahero</span>
-				</div>
-				<nav id="site-navigation">
-					<ul>
-						<li><a href="/" title="Home">Home</a></li>
-						<li><a href="/blog/" title="Blog">Blog</a></li>
-						<li><a href="/contact/" title="Contact">Contact</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div id="content">
-				{{ content }}
-			</div>
-			<br class="clear" />
-		</div>
+		<section id="sidebar">
+			<header id="site-header">
+				<h1 id="site-title">Cocoahero</h1>
+			</header>
+			<nav id="site-navigation">
+				<ul>
+					<li><a href="/" title="Home">Home</a></li>
+					<li><a href="/blog" title="Blog">Blog</a></li>
+					<li><a href="/contact" title="Contact">Contact</a></li>
+				</ul>
+			</nav>
+		</section>
+		<section id="content">
+			{{ content }}
+		</section>
+		<br class="clear" />
 	</body>
 </html>
 	
