@@ -17,14 +17,25 @@ The generic steps are as follows:
 
 Trust me it's easier than it sounds. The first two steps are straight forward. The delete key is your friend. For the main.m file, find the line that is similar to
 
-<script src="https://gist.github.com/1111511.js"> </script>
+{% highlight objectivec %}
+int retVal = UIApplicationMain(argc, argv, nil, nil);
+{% endhighlight %}
 
 Change it so the last parameter is a string with the class name of your UIApplicationDelegate, like so:
 
-<script src="https://gist.github.com/1111514.js"> </script>
+{% highlight objectivec %}
+int retVal = UIApplicationMain(argc, argv, nil, @"MyApp_AppDelegate");
+{% endhighlight %}
 
 Now all you have left to do is to initialize the UIWindow instance variable yourself. A simple "getter" property implementation fixes this quickly.
 
-<script src="https://gist.github.com/1111517.js"> </script>
+{% highlight objectivec %}
+- (UIWindow *)window {
+    if (window == nil) {
+        window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    }
+    return window;
+}
+{% endhighlight %}
 
 *Note* The code above assumes your UIWindow instance variable is named window and you have a property declaration in your AppDelegate's header file.

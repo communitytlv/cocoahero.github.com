@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Welcome
 tags: cocoa, iphone, development, ruby, mac, apple
 ---

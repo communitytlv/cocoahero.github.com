@@ -1,26 +1,19 @@
-// Imports -------------------------------------------------------------------
+// Imports --------------------------------------------------------------------
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
 
-@import "compass/css3/";
-@import "compass/typography/";
+// Colors ---------------------------------------------------------------------
+$base-color: #336699;
 
-// CSS Reset -----------------------------------------------------------------
-
+// Global Styling -------------------------------------------------------------
 * {
-	margin: 0; 
-	padding: 0;
 	@include box-sizing(border-box);
+	margin: 0px;
+	padding: 0px;
 }
-
-// Color Constants -----------------------------------------------------------
-
-$base-color-seed: #336699;
-
-// Global Styling ------------------------------------------------------------
 
 html {
 	@include establish-baseline;
-}
-
-br.clear {
-	clear: both;
+	font-family: "Helvetica Neue", Arial, sans-serif;
 }

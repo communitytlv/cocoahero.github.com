@@ -8,5 +8,5 @@ Icon?
 # Jekyll Files and Folders
 _site/
 
-# SASS
+# Sass
 .sass-cache/

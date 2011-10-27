@@ -1,142 +1,135 @@
 @import "base";
+@import "pygments";
 
-html, body {height: 100%;}
-
-body {
-	background-color: #FFF;
-	font-family: "Helvetica Neue", Arial, sans-serif;
+html, body {
+	height: 100%;
 }
 
-// Sidebar -------------------------------------------------------------------
+// Sidebar --------------------------------------------------------------------
 
-section#sidebar {
-	width: 17.1875em;
-	height: 100%;
+div#sidebar {
 	float: left;
-	text-align: right;
-	@include background-image(linear-gradient(left, $base-color-seed 90%, darken($base-color-seed, 5%) 100%));
+	width: 18.75em;
+	height: 100%;
 	position: fixed;
-	padding-top: 6.25em;
-	padding-right: 2.5em;
+	background-color: $base-color;
+	text-align: right;
+	color: #FFF;
+	padding-right: 2.8125em;
+	@include background-image(linear-gradient(left, $base-color 90%, darken($base-color, 5%) 100%));
 }
 
 header#site-header {
-	padding-bottom: 0.9375em;
-	border-bottom: 1px solid #FFF;
-}
-
-h1#site-title {
-	font-weight: normal;
-	@include adjust-font-size-to(32px);
-	color: #FFF;
-}
-
-nav#site-navigation {
-	padding-top: 0.9375em;
-	color: #FFF;
-	
-	a {
-		color: inherit;
-		text-decoration: none;
-		
-		&:hover {
-			text-decoration:underline;
-		}
+	margin-top: 6.25em;
+	h1 {
+		@include adjust-font-size-to(32px);
+		padding-bottom: 0.483870968em;
+		margin-bottom: 0.483870968em;
+		border-bottom: 1px solid #FFF;
+		font-weight: normal;
 	}
-	
+}
+
+nav#site-navigation {	
 	ul {
 		list-style-type: none;
 		
 		li {
-			padding-bottom: 0.3125em;
+			margin: 0.3125em 0em;
+		}
+	}
+	
+	a {
+		text-decoration: none;
+		color: inherit;
+		@include adjust-font-size-to(15px);
+		
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
 
-// Page Content --------------------------------------------------------------
+// Page -----------------------------------------------------------------------
 
-section#content {
-	max-width: 42.8125em;
-	height: 100%;
-	margin-left: 17.1875em;
+div#page {
+	margin-left: 18.75em;
+	width: 56.25em;
+	min-height: 100%;
+	padding-left: 2.8125em;
 	float: left;
-	padding-left: 2.5em;
-	padding-top: 6.25em;
-	padding-bottom: 3.125em;
 }
 
-h1#content-title {
-	@include adjust-font-size-to(32px);
+header#page-header {
+	margin-top: 6.25em;
+	h1 {
+		@include adjust-font-size-to(32px);
+		padding-bottom: 0.483870968em;
+		margin-bottom: 0.483870968em;
+		color: $base-color;
+		border-bottom: 1px solid $base-color;
+		font-weight: normal;
+	}
+}
+
+// Content --------------------------------------------------------------------
+
+div#content {
+	@include adjust-font-size-to(15px);
+	
+	h2,h3,h4 {
+		margin-bottom: 0.25em;
+		font-weight: bold;
+	}
+	
+	h2 {
+		@include adjust-font-size-to(18px);
+	}
+	
+	h3 {
+		@include adjust-font-size-to(16px);
+	}
+	
+	h4 {
+		@include adjust-font-size-to(15px);
+	}
+	
+	p {
+		margin-bottom: 1.0em;
+	}
+	
+	a {
+		text-decoration: none;
+		font-weight: bold;
+		color: $base-color;
+		
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	
+	ul, ol {
+		margin-left: 1cm;
+		margin-bottom: 1.0em;
+	}
+	
+	.highlight {
+		margin-bottom: 1.0em;
+		overflow: auto;
+	}
+	
+	.highlight > pre {
+		background-color: rgba(0, 0, 0, 0.025);
+		border: 1px solid #CCC;
+		padding: 1.0em;
+	}
+}
+
+time {
+	color: #999;
 	font-weight: normal;
-	padding-bottom: 0.46875em;
-	border-bottom: 1px solid $base-color-seed;
-	margin-bottom: 0.46875em;
-	color: $base-color-seed;
 }
-
-// Blog Article --------------------------------------------------------------
 
 article {
-	padding-bottom: 2em;
-}
-
-header.article-header {	
-	margin-bottom: 0.46875em;
-	
-	h1.article-title {
-		@include adjust-font-size-to(32px);
-		font-weight: normal;
-		padding-bottom: 0.46875em;
-		border-bottom: 1px solid $base-color-seed;
-		margin-bottom: 0.46875em;
-		color: $base-color-seed;
-	}
-	
-	time {
-		color: #999;
-	}
-}
-
-div#blog-index {
-	padding-bottom: 1em;
-	
-	article {
-		header {
-			h2 {
-				font-weight: normal;
-				a {
-					text-decoration: none;
-				
-					&:hover {
-						text-decoration: underline;
-					}
-				}
-			}
-		}
-	}
-}
-
-// Generic Styling -----------------------------------------------------------
-
-h2 {
-	@include adjust-font-size-to(28px);
-	font-weight: normal;
-}
-
-p {
-	@include adjust-font-size-to(16px);
-	padding-bottom: 1em;
-}
-
-a {
-	color: $base-color-seed;
-}
-
-ul,ol {
-	margin-left: 1cm;
-	margin-bottom: 1em;
-}
-
-.gist {
-	@include adjust-font-size-to(14px);
+	margin-bottom: 2.0em;
 }

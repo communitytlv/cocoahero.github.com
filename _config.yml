@@ -1,1 +1,4 @@
-permalink: /blog/:title
+pygments: true
+markdown: redcarpet
+permalink: /blog/:year/:month/:day/:title
+exclude: sass/, config.rb
