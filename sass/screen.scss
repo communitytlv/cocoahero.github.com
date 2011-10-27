@@ -54,9 +54,10 @@ nav#site-navigation {
 
 div#page {
 	margin-left: 18.75em;
-	width: 56.25em;
+	min-width: 25em;
+	max-width: 59.0625em;
 	min-height: 100%;
-	padding-left: 2.8125em;
+	padding: 0em 2.8125em;
 	float: left;
 }
 
