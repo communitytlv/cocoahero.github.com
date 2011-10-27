@@ -114,6 +114,19 @@ div#content {
 		margin-bottom: 1.0em;
 	}
 	
+	blockquote:before {
+		float:left;
+		content: "“";
+		font-size: 62px;
+		color: $base-color;
+		padding-right: 15px;
+	}
+	
+	blockquote {
+		margin: 1cm;
+		font-style: italic;
+	}
+	
 	.highlight {
 		margin-bottom: 1.0em;
 		overflow: auto;
