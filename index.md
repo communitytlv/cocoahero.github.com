@@ -3,8 +3,8 @@ layout: default
 title: Welcome
 tags: cocoa, iphone, development, ruby, mac, apple
 ---
-Hello! 
+Hello! I'm Jonathan, a 23 year old technology fanatic. You have stubbled upon the place that describes me through my work and my written thoughts on various subjects.
 
-My name is Jonathan Baker and I write code for fun. I am currently interested in iOS development, web development, and the languages related there to.  This is my personal blog and portfolio site.
+In both my professional career and in my spare time, I have become an avid software developer who enjoys a good challenge. Beautiful design and well thoughtout user experience are non-negotiable requirements for any project that I am involved in.
 
-If you wish to contact me, you can find out how [here](/contact/).
+Please enjoy your stay and if you wish to contact me, you can find out how [here](/contact/).
