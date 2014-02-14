@@ -54,9 +54,6 @@ div.page {
         margin-top: ($avatar-size / 2) * -1;
         border-radius: $avatar-size;
         border: 3px solid #FFF;
-        background: url($avatar-url);
-        background-origin: center;
-        background-size: $avatar-size;
     }
 
     ul {
