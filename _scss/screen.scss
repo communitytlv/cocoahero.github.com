@@ -1,0 +1,87 @@
+@import 'global';
+
+* {
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+div.page {
+    height: 100%;
+    text-align: center;
+}
+
+#home {
+    #upper {
+        height: 50%;
+        background-color: #3498db;
+    }
+
+    #lower {
+        height: 50%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin-top: ($avatar-size / 2);
+    }
+
+    h2 {
+        color: #8E8E93;
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 15px;
+    }
+
+    img#avatar {
+        $avatar-size: 128px;
+        width: $avatar-size;
+        height: $avatar-size;
+        position: absolute;
+        top: 50%;
+        left : 50%;
+        margin-left: ($avatar-size / 2) * -1;
+        margin-top: ($avatar-size / 2) * -1;
+        border-radius: $avatar-size;
+        border: 3px solid #FFF;
+        background: url($avatar-url);
+        background-origin: center;
+        background-size: $avatar-size;
+    }
+
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline;
+        }
+    }
+
+    .nav-icon {
+        width: 32px;
+        height: 32px;
+        margin: 15px;
+        font-size: 0px;
+        display: inline-block;
+        background-size: 32px;
+        background-origin: center;
+    }
+
+    #github {
+        background-image: url("/images/octocat.svg");
+    }
+
+    #twitter {
+        background-image: url("/images/twitter.svg");
+    }
+}
