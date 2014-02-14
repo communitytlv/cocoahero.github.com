@@ -18,5 +18,3 @@ div.page { height: 100%; text-align: center; }
 #home .nav-icon.github { background-image: url("/images/octocat.svg"); }
 #home .nav-icon.twitter { background-image: url("/images/twitter.svg"); }
 #home .nav-icon.contact { background-image: url("/images/contact.svg"); }
-
-#contact { background-color: red; }
