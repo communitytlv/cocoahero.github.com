@@ -74,11 +74,15 @@ div.page {
         background-origin: center;
     }
 
-    #github {
+    .nav-icon.github {
         background-image: url("/images/octocat.svg");
     }
 
-    #twitter {
+    .nav-icon.twitter {
         background-image: url("/images/twitter.svg");
+    }
+
+    .nav-icon.contact {
+        background-image: url("/images/contact.svg");
     }
 }

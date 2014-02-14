@@ -15,5 +15,8 @@ div.page { height: 100%; text-align: center; }
 #home ul { list-style-type: none; }
 #home ul li { display: inline; }
 #home .nav-icon { width: 32px; height: 32px; margin: 15px; font-size: 0px; display: inline-block; background-size: 32px; background-origin: center; }
-#home #github { background-image: url("/images/octocat.svg"); }
-#home #twitter { background-image: url("/images/twitter.svg"); }
+#home .nav-icon.github { background-image: url("/images/octocat.svg"); }
+#home .nav-icon.twitter { background-image: url("/images/twitter.svg"); }
+#home .nav-icon.contact { background-image: url("/images/contact.svg"); }
+
+#contact { background-color: red; }
