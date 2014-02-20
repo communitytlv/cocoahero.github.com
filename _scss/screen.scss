@@ -26,26 +26,6 @@ div.container {
     max-width: 500px;
 }
 
-div.return {
-    background-color: #DFDFDF;
-    color: #222;
-    font-weight: 400;
-    font-size: 18px;
-    position: absolute;
-    bottom: 0;
-
-    a {
-        width: 100%;
-        padding: 15px;
-        color: inherit;
-        display: inline-block;
-        text-decoration: none;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-}
-
 #home {
     #upper {
         height: 40%;
@@ -115,21 +95,5 @@ div.return {
 
     .nav-icon.contact {
         background-image: url("/images/contact.svg");
-    }
-}
-
-#about {
-    font-size: 20px;
-    text-align: left;
-
-    p {
-        padding: 5px;
-        line-height: 1.5em;
-    }
-
-    a {
-        color: #3498db;
-        font-weight: bold;
-        text-decoration: none;
     }
 }

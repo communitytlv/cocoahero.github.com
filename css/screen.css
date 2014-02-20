@@ -9,10 +9,6 @@ div.page { height: 100%; text-align: center; position: relative; }
 
 div.container { padding: 15px; margin: 0 auto; max-width: 500px; }
 
-div.return { background-color: #DFDFDF; color: #222; font-weight: 400; font-size: 18px; position: absolute; bottom: 0; }
-div.return a { width: 100%; padding: 15px; color: inherit; display: inline-block; text-decoration: none; }
-div.return a:hover { cursor: pointer; }
-
 #home #upper { height: 40%; background-color: #3498db; }
 #home #lower { height: 60%; padding: 15px; }
 #home h1 { font-size: 24px; font-weight: 400; margin-top: 64px; }
@@ -25,7 +21,3 @@ div.return a:hover { cursor: pointer; }
 #home .nav-icon.github { background-image: url("/images/github.svg"); }
 #home .nav-icon.twitter { background-image: url("/images/twitter.svg"); }
 #home .nav-icon.contact { background-image: url("/images/contact.svg"); }
-
-#about { font-size: 20px; text-align: left; }
-#about p { padding: 5px; line-height: 1.5em; }
-#about a { color: #3498db; font-weight: bold; text-decoration: none; }
