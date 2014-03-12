@@ -17,7 +17,6 @@ div.container { padding: 15px; margin: 0 auto; max-width: 500px; }
 #home ul { list-style-type: none; }
 #home ul li { display: inline; }
 #home .nav-icon { width: 32px; height: 32px; margin: 15px; font-size: 0px; display: inline-block; background-size: 32px; background-origin: center; }
-#home .nav-icon.about { background-image: url("/images/about.svg"); }
 #home .nav-icon.github { background-image: url("/images/github.svg"); }
 #home .nav-icon.twitter { background-image: url("/images/twitter.svg"); }
 #home .nav-icon.contact { background-image: url("/images/contact.svg"); }
