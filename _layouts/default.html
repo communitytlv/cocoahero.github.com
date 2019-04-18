@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}">
+<head>
+  {% include google-analytics.html %}
+  {% if page.title %}
+  <title>{{ page.title }} | {{ site.title }}</title>
+  {% else %}
+  <title>{{ site.title }}</title>
+  {% endif %}
+  <meta name="viewport" content="initial-scale=1, minimal-ui">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta content="{{ site.title }}" property="og:site_name"/>
+  <meta content="{{ site.url }}" property="og:url"/>
+  <meta content="{{ site.description }}" property="og:description" />
+  <meta name="google-site-verification" content="O8OUFRK4tl8bP6ye2ASjE8FUWRP8fb53ZrbQrP6XRzo" />
+  <link rel="stylesheet" type="text/css" href="/styles/screen.css" media="screen" charset="utf-8" />
+</head>
+<body>
+  {{ content }}
+</body>
+</html>

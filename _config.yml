@@ -1,5 +1,15 @@
-sass:
-    sass_dir: css
-    style: :compressed
+url: "https://www.jonathanbaker.me"
 
-exclude: [Gemfile, Gemfile.lock, Procfile, CNAME, README.md]
+title: Jonathan Baker
+
+description: >-
+  iOS, Android, and Web Developer
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Procfile
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
